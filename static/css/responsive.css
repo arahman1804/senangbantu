@@ -1,0 +1,135 @@
+@media all and (max-width: 992px) {
+    /* pc desktop: */
+
+    /* Navbar */
+
+    .kateposisi{
+        padding-bottom: 3%;
+    }
+
+    .areacari {
+        width: auto;
+
+    }
+
+    .tulisan1 {
+        width: auto;
+        margin: auto;
+    }
+
+    .tulisan2 {
+        width: auto;
+        margin-left: auto;
+    }
+
+    .tulisan3 {
+        width: auto;
+        margin-left: auto;
+    }
+
+    .pembatas{
+        width: 100%;
+        height: 0px;
+        left: 1440px;
+        top: 264px;
+
+        transform: rotate(0deg);
+    }
+
+    .bgdaftar{
+        background-color: #E80D9C;
+        width: auto;
+        margin-top: 1%;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .pembatasnavbar{
+        width: 60%;
+        height: 25%;
+        margin-top: 15%;
+        margin-bottom: 10%;
+        padding-top: 8%;
+        margin-left: 20.5%;
+
+    }
+
+    /* carosel */
+
+
+    /* bagian ke2 */
+
+    .naikinpembatas{
+        margin-top: -15%;
+        margin-left: 7%;
+    }
+
+    span.pembatasnavbar {
+        display: inline-block;
+        width: auto;
+        height: 100px;
+        background-color: #6B0F7C;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
+
+    .donasilogo{
+        width: auto;
+        height: auto;
+        margin-left: -35%;
+        margin-top: -32%;
+    }
+
+    .ajukan{
+        width: auto;
+        margin-left: -30%;
+        margin-top: -40%;
+    }
+
+    /* bagian ke3 */
+    .naikinpembatas2{
+        margin-top: -8%;
+        margin-left: 13%;
+        margin-bottom: -3%;
+    }
+
+
+    h1.textjumbotron{
+
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        color: #49516F;
+    }
+
+    p.textjumbotron{
+        margin-top: -3%;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 24px;
+        color: #49516F;
+    }
+
+    .pos1{
+        width: relative;
+        height: relative;
+        margin-top: -10%;
+    }
+
+    hr.pos1 {
+        border: 3px solid #650177;
+        border-radius: 1px;
+        width: 32%;
+        margin-left: 0%;
+        margin-top: 0.5%;
+        margin-bottom: 3%;
+      }
+
+    /* hapus garis bawah <a> */
+    .posisilihatsemua{
+        margin-top: -28%;
+        margin-left: -15%;
+    }
+}
+

@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+  }
+
+/* Bagian dari navbar */
+.kateposisi{
+    width: 110px;
+    height: 34.33px;
+    left: 267px;
+    top: 28px;
+    margin-right: 10px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.areacari{
+    width: 400px;
+    height: 40px;
+    left: 0px;
+    top: 29px;
+}
+
+.tulisan{
+
+    /* Judul */
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #000000;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.tulisan1{
+    width: 100px;
+    height: 27px;
+    left: 750px;
+    top: 10px;
+    margin-left: 5%;
+}
+
+.tulisan2{
+    width: 80px;
+    height: 27px;
+    left: 1000px;
+    top: 10px;
+    margin-left: 5%;
+
+}
+
+.tulisan3{
+    width: 129px;
+    height: 27px;
+    left: 930px;
+    top: 10px;
+    margin-left: 5%;
+}
+
+.tulisan4{
+    width: 58px;
+    height: 27px;
+    left: 1233px;
+    top: 31px;
+    margin-left: 5%;
+}
+
+.pembatas{
+    width: 74px;
+    height: 0px;
+    left: 1087px;
+    top: 10%;
+
+    /* Pink 1 */
+
+    border: 3px solid #E80D9C;
+    transform: rotate(90deg);
+}
+.bgdaftar {
+    background-color: #E80D9C;
+    width: 130px;
+    height: 41px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* bagian bawah carosel */
+.naikinpembatas{
+    margin-top: -3%;
+}
+
+span.pembatasnavbar {
+    display: inline-block;
+    width: 75%;
+    height: auto;
+    background-color: #6B0F7C;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+
+
+/* Bagian menu */
+h1.textjumbotron{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 27px;
+    color: #49516F;
+}
+
+p.textjumbotron{
+    margin-top: -3%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 0%;
+    color: #49516F;
+}
+
+.pos1{
+    margin-left: 75%;
+    margin-top: -6%;
+
+}
+
+hr.pos1 {
+    border: 3px solid #650177;
+    border-radius: 1px;
+    width: 28%;
+    margin-left: 0%;
+    margin-top: 1%;
+  }
+hr.pos2 {
+    border: 3px solid #650177;
+    border-radius: 1px;
+    width: 41%;
+    margin-left: 0%;
+    margin-top: 1%;
+  }
+hr.pos3 {
+    border: 3px solid #650177;
+    border-radius: 1px;
+    width: 24%;
+    margin-left: 0%;
+    margin-top: 1%;
+  }
+hr.pos4 {
+    border: 3px solid #650177;
+    border-radius: 1px;
+    width: 47%;
+    margin-left: 0%;
+    margin-top: 1%;
+  }
+
+/* hapus garis bawah <a> */
+a.textjumbotron{
+
+    text-decoration: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 90%;
+    line-height: 36px;
+    color: #49516F;
+}
+
+/* Bagian favorit */
+
+.favorit1{
+    padding-top: 5%;
+    margin-left: -5%;
+}
+.favorit2{
+    margin-left: -30%;
+    margin-top: 5%;
+}
+.favorit3{
+    margin-left: -15%;
+    margin-top: 1%;
+}
+.favorit4{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.favorit5{
+    margin-left: -5%;
+    margin-top: 5%;
+}
+.favorit6{
+    margin-left: -3%;
+    margin-top: 5%;
+}
+
+.fontfav{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100%;
+    line-height: 100%;
+    /* identical to box height */
+
+
+    /* font1 */
+
+    color: #49516F;
+}
+
+/* Batas ganti */
+
+.span {
+    display: inline-block;
+    width: 35%;
+    height: 70px;
+
+    margin-left: 33%;
+    background-color: #E80D9C;
+  }
+
+a.font1{
+    text-decoration: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 200%;
+    line-height: 200%;
+
+    margin-left: 35%;
+
+
+    color: #FFFFFF;
+}
+footer{
+    background-color: #6B0F7C;
+}
+p.footer{
+    margin-top: 2%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #EF9BFF;
+}
+h1.footer{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #EF9BFF;
+}
+h1.footer2{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+hr.footer{
+    size: auto;
+    width: 20%;
+    height: 3%;
+    margin-top: 1%;
+    border: 2%;
+    background-color: #EF9BFF;
+}

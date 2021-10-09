@@ -1,0 +1,184 @@
+{% extends 'layout.html' %}
+
+{% block title %} SenangBantu.com {% endblock %}
+
+{% block body %}
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../static/img/imgbg.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="../static/img/imgbg.jpg" alt="Chicago" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="../static/img/imgbg.jpg" alt="New York" class="d-block" style="width:100%">
+    </div>
+  </div>
+
+  {% include 'include/pembatasjumbo.html' %}
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+
+<!--
+<div class="bgnavbar">
+
+
+  <div class="pembatasnavbar">
+    <img src="../static/img/logo/pembatas-navbar.png" alt="pembatasnavbar" style="width: 100%; margin-top: 30%;">
+    <div class="donasilogo">
+      <img src="../static/img/logo/donasi.png" alt="pembatasnavbar" style="width: 100%; margin-top: 156.5%;">
+    </div>
+    <div class="ajukan">
+      <img src="../static/img/logo/ajukan.png" alt="pembatasnavbar" style="width: 100%; margin-top: 300.5%;">
+    </div>
+  </div>
+
+</div>
+-->
+
+<br>
+
+{% include 'include/navjumbo.html' %}
+
+<br><br>
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for row in ajakan %}
+    <div class="col">
+      <div class="card">
+        <img src="../static/img/{{ row.2 }}" alt="upload" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title text-center">{{ row.1 }}</h5>
+            <p>{{ row.3 }}
+            <i class="fa fa-check-circle"></i></p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%"></div>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p>Rp. {{ row.7 }}</p>
+              {{ row.8 }} hari
+            </div>
+            <div class="d-flex justify-content-between">
+              <p>Donasi Terkumpul</p>
+              {{ row.6 }}
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    {% endfor %}
+  </div>
+
+</div>
+
+<br>
+
+{% include 'include/navjumbo2.html' %}
+
+<br><br>
+
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+  {% for row in datateratas %}
+
+
+    <div class="card mb-3" style="max-width: 100%;">
+      <div class="row g-0">
+        <div class="col align-self-center">
+          <img src="../static/img/{{ row.2 }}" class="img-thumbnail rounded-start" alt="upload">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{ row.1 }}</h5>
+            <p class="card-text">{{ row.3 }}</p>
+            <div class="d-flex justify-content-between">
+              <p>Rp. {{ row.7 }}</p>
+              {{ row.8 }} hari
+            </div>
+            <div class="d-flex justify-content-between">
+              <p>Donasi Terkumpul</p>
+              {{ row.6 }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  {% endfor %}
+
+  </div>
+
+</div>
+
+{% include 'include/navjumbo3.html' %}
+
+<br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br><br>
+
+  {% include 'include/navjumbo4.html' %}
+
+<br><br>
+
+  {% include 'include/favorit.html' %}
+
+<br><br>
+
+{% endblock %}

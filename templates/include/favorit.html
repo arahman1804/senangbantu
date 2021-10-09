@@ -1,0 +1,94 @@
+<div class="container mt-3">
+    <div class="shadow mt-2 bg-ligth text-dark rounded">
+
+      <div class="container ">
+        <div class="row pt-3 ms-5">
+
+          <div class="col order-first">
+            <a href="#" class="textjumbotron">
+            <img src="../../static/img/logo/favoritlogo/1.png" alt="logofar1">
+            <p class="favorit1 fontfav">Semua Kategori</p>
+            </a>
+          </div>
+
+          <div class="col order-first">
+            <a href="#" class="textjumbotron">
+            <img src="../../static/img/logo/favoritlogo/2.png" alt="logofar2">
+            <p class="favorit2 fontfav">Sarana dan Infrastruktur Masjid</p>
+            </a>
+          </div>
+
+          <div class="col order-first">
+            <a href="#" class="textjumbotron">
+            <img src="../../static/img/logo/favoritlogo/3.png" alt="logofar3">
+            <p class="favorit3 fontfav">Beasiswa dan Pendidikan</p>
+            </a>
+          </div>
+
+          <div class="col order-first">
+            <a href="#" class="textjumbotron">
+            <img src="../../static/img/logo/favoritlogo/4.png" alt="logofar4">
+            <p class="favorit4 fontfav">Difabel</p>
+            </a>
+          </div>
+
+          <div class="col order-first">
+            <a href="#" class="textjumbotron">
+            <img src="../../static/img/logo/favoritlogo/5.png" alt="logofar5">
+            <p class="favorit5 fontfav">Kegiatan Sosial</p>
+            </a>
+          </div>
+
+          <div class="col order-first">
+            <a href="#" class="textjumbotron">
+            <img src="../../static/img/logo/favoritlogo/6.png" alt="logofar6">
+            <p class="favorit6 fontfav">Panti Asuhan</p>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <br>
+        <div class="pos2">
+            <img src="../static/img/logo/Rectangle 322.png" alt="garisbawah" class="garisbawah" style="width: 100%;">
+        </div>
+
+      <br>
+
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            {% for row in ajakan %}
+            <div class="col">
+              <div class="card">
+                <img src="../static/img/{{ row.2 }}" alt="upload" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title text-center">{{ row.1 }}</h5>
+                    <p>{{ row.3 }}
+                    <i class="fa fa-check-circle"></i></p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%"></div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p>Rp. {{ row.7 }}</p>
+                      {{ row.8 }} hari
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p>Donasi Terkumpul</p>
+                      {{ row.6 }}
+                    </div>
+                </div>
+
+              </div>
+            </div>
+
+            {% endfor %}
+          </div>
+
+        </div>
+
+        <br>
+    </div>
+<br>
+<span class="rounded-pill span"><a href="#" class="font1">Lihat Semua</a></span>
+</div>
